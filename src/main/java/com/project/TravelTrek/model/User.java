@@ -10,7 +10,8 @@ import java.util.Set;
 @Table(name = "appUser")
 public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Id
+    private Long userId;
     private String username;
     private String email;
     private String password;

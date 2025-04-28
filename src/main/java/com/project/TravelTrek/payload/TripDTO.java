@@ -9,4 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TripDTO {
+    private Long id;
+    private String country;
+    private String city;
+    private float latitude;
+    private float longitude;
 }

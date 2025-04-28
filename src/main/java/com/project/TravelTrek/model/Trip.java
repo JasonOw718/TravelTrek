@@ -8,7 +8,8 @@ import java.util.Set;
 @Entity
 public class Trip {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Id
+    private Long tripId;
     private String country;
     private String city;
     private float latitude;

@@ -1,13 +1,13 @@
 package com.project.TravelTrek.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
 import java.util.Date;
 
 @Entity
 public class UserTrip {
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
     private Long user_trip_id;
     private Date pinned_at;
     private String photo_url;
